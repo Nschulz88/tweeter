@@ -22,6 +22,7 @@ body {
   height: 100%;
   color: #244751;
   background-color: #eee;
+  z-index: 2;
 }
 
 main {

@@ -1,4 +1,7 @@
 /* ALL TWEETS general section */
+.tweets-container {
+    height: 100%;
+}
 
 .all-tweets {
     border: 1px solid lightgray;
