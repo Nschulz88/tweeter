@@ -6,6 +6,11 @@
 
   $(function () {
 
+    $('#nav-bar button#compose').click(() => {
+      $('.new-tweet').slideToggle();
+      $('.new-tweet textarea').focus();
+    });
+
 
     function loadTweets() {
       $.get('/tweets').done((tweetsData) => {
@@ -26,6 +31,7 @@
       } else {
         $.post('/tweets', data).done((/*response*/) => {    
           userTweet.val('');
+          $(e.target).find('.counter').text('140');
           loadTweets();
         })
       }

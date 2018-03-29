@@ -20,3 +20,19 @@
     line-height: 2.5em;
     float: left;
 }
+
+#nav-bar button#compose {
+    font-size: 1.5em;
+    line-height: 2em;
+    float: right;
+    margin-top: 12px;
+    border-radius: 7px;
+    border: 2px solid darkslategrey;
+    color: mediumturquoise;
+    font-weight: 300;
+    background-color: lightcyan;
+}
+
+#nav-bar button#compose:hover {
+    background-color: white;
+}
