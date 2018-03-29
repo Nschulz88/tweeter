@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" /> 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" /> 
     <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" /> 
+    <link rel="stylesheet" href="/styles/jquery.flash.css" type="text/css" /> 
+
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -24,6 +26,7 @@
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.flash.js"></script>
 
   </head>
 
@@ -40,7 +43,7 @@
         <section class="new-tweet">
             <h2 class="new-tweet-header">Compose Tweet</h2>
             <form action="/tweets/" method="POST">
-              <textarea name="text" placeholder="What are you humming about?"></textarea>
+              <textarea class="userTweet" name="text" placeholder="What are you humming about?"></textarea>
               <input type="submit" value="Tweet">
               <span class="counter">140</span>
             </form>
@@ -48,24 +51,7 @@
         <section class="tweets-container">
         
         <!-- <article class="all-tweets">
-          <header>
-            <img src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png">
-            <h3>Bill Fields</h3>
-            <h5>@MrFields</h5>
-          </header>
-
-          <content>
-            <p>Little Tweet Here</p>
-          </content>
-         
-          <footer>
-            <span class="timestamp">10 days ago</span>
-            <span class="tweet-icons">
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </span>
-          </footer>
+        HTML FOR TWEET ARTICLE CREATED THROUGH jQUERY 
         </article> -->
         </section>
           

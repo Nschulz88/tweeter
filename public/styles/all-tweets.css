@@ -51,6 +51,7 @@
  .all-tweets content p {
     font-weight: 300;
     margin: 40px 10px;
+    overflow-wrap: break-word;
  }
 /* --------------------------- */
 
