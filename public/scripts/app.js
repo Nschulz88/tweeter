@@ -19,6 +19,12 @@
     }
     loadTweets();
 
+    $('.new-tweet form').keypress(function (e) {
+      if (e.which == 13) {
+        $('.new-tweet form').submit();
+        return false;
+      }
+    }); 
 
     $('.new-tweet form').on('submit', (e) => {
       e.preventDefault();
