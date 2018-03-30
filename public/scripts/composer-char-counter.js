@@ -1,6 +1,4 @@
-$( document ).ready(function () {
-console.log('YEY, I loaded!');
-
+$(() => {
 
     $('textarea').on('input', function() {
         var maxChar = 140;

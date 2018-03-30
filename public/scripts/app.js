@@ -1,10 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-  $(function () {
+  $(() => {
 
     $('#nav-bar button#compose').click(() => {
       $('.new-tweet').slideToggle();
@@ -14,14 +8,14 @@
 
     function loadTweets() {
       $.get('/tweets').done((tweetsData) => {
-        console.log("lOGGING length: ", tweetsData.length);
         renderTweets(tweetsData);
       })
     }
     loadTweets();
+    
 
-    $('.new-tweet form').keypress(function (e) {
-      if (e.which == 13) {
+    $('.new-tweet form').keypress((e) => {
+      if (e.which == 13 && !e.shiftKey) {
         $('.new-tweet form').submit();
         return false;
       }

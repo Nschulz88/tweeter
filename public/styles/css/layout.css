@@ -1,0 +1,160 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+.new-tweet {
+  margin: 2em;
+  border: 1px solid lightgrey;
+  background-color: #eee;
+  border-radius: 7px;
+  position: relative;
+  display: none; }
+  .new-tweet h2 {
+    border-bottom: 1px solid black;
+    margin: 12px; }
+  .new-tweet form {
+    padding: 12px; }
+    .new-tweet form textarea {
+      width: 100%;
+      padding: 5px; }
+    .new-tweet form .counter {
+      float: right;
+      font-style: italic;
+      color: grey;
+      font-size: smaller; }
+
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding: 0 2em;
+  z-index: 3; }
+  #nav-bar .logo {
+    width: 80px;
+    height: 80px;
+    float: left; }
+  #nav-bar .header {
+    padding-left: 10px;
+    font-size: 2em;
+    line-height: 2.5em;
+    float: left; }
+  #nav-bar button#compose {
+    font-size: 1.5em;
+    line-height: 2em;
+    float: right;
+    margin-top: 12px;
+    border-radius: 7px;
+    border: 2px solid darkslategrey;
+    color: mediumturquoise;
+    font-weight: 300;
+    background-color: lightcyan; }
+    #nav-bar button#compose:hover {
+      background-color: white;
+      cursor: pointer; }
+
+/* ============================================================================== */
+/* = jQUERY FLASH PLUGIN CSS                                                    = */
+/* ============================================================================== */
+#flash {
+  cursor: pointer;
+  z-index: 4;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: darkorange;
+  color: darkcyan;
+  width: 915px;
+  padding: 25px 20px;
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+  border: none;
+  filter: alpha(opacity=280);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  border-radius: 40px 40px 0 0;
+  -moz-border-radius: 40px 40px 0 0;
+  -webkit-border-top-left-radius: 40px;
+  -webkit-border-top-right-radius: 40px; }
+  #flash div.flash_close {
+    top: -6px;
+    right: -6px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: url("close.png") top left no-repeat;
+    cursor: pointer;
+    z-index: 4; }
+
+.tweets-container {
+  height: 100%; }
+
+.all-tweets {
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  margin: 2em;
+  color: #244751; }
+  .all-tweets:hover {
+    border: 1px solid gray; }
+  .all-tweets:hover .tweet-icons {
+    visibility: visible;
+    color: mediumturquoise;
+    font-size: small; }
+  .all-tweets:hover header {
+    opacity: 1; }
+  .all-tweets header {
+    border-radius: 7px 7px 0 0;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6; }
+    .all-tweets header img {
+      border-radius: 7px;
+      margin: 7px; }
+    .all-tweets header h3 {
+      width: 70%;
+      margin-top: 10px; }
+    .all-tweets header h5 {
+      padding-right: 7px;
+      margin-top: 15px;
+      font-weight: 300; }
+  .all-tweets content p {
+    font-weight: 300;
+    margin: 40px 10px;
+    overflow-wrap: break-word; }
+  .all-tweets footer {
+    border-top: 1px solid #eee;
+    font-weight: 300;
+    font-size: smaller;
+    padding: 10px; }
+    .all-tweets footer .tweet-icons {
+      visibility: hidden;
+      float: right; }
+    .all-tweets footer .fas {
+      margin-right: 5px; }
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  height: 100%;
+  color: #244751;
+  background-color: #eee;
+  z-index: 2; }
+
+main {
+  width: 450px;
+  min-height: 100%;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 140px; }
