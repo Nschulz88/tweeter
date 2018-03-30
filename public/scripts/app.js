@@ -14,6 +14,7 @@
 
     function loadTweets() {
       $.get('/tweets').done((tweetsData) => {
+        console.log("lOGGING length: ", tweetsData.length);
         renderTweets(tweetsData);
       })
     }
@@ -31,13 +32,14 @@
       var data = $('.new-tweet form').serialize();
       var userTweet = $(e.target).find('.userTweet');
       if(!userTweet.val()) {
-        $.flash('Yo, enter something if you want to tweet!');
+        $.flash('Enter something if you want to tweet!');
       } else if (userTweet.val().length > 140) {
-        $.flash('Keep it short, will ya?');
+        $.flash('Keep it short... under 140 characters please! ');
       } else {
         $.post('/tweets', data).done((/*response*/) => {    
           userTweet.val('');
           $(e.target).find('.counter').text('140');
+          $('.tweets-container').empty();
           loadTweets();
         })
       }

@@ -35,4 +35,5 @@
 
 #nav-bar button#compose:hover {
     background-color: white;
+    cursor:pointer;
 }
